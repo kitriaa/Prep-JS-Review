@@ -172,7 +172,7 @@ console.log(product);
 /*15.  Declare a function named dunkinDonuts.
 This function will access the value stored in the sum variable and uses this number to return the string "I eats X old fashioned donuts every morning to stay classy." X is the value stored in the sum variable.  Console log the result.  */ 
 function dunkinDonuts(sum) {
-  return "I eat " + sum + " old fashioned donuts every morning to stay classy.";
+  return "I eats " + sum + " old fashioned donuts every morning to stay classy.";
 }
 console.log(dunkinDonuts(sum));
 /*16.  Declare a function named stayinClassy.

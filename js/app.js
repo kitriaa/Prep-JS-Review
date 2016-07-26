@@ -240,7 +240,7 @@ console.log(contentFiller(bigBox));
 /*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
 
 function firstReverse(str) {
-  var string = ""
+  var string = "";
   for (i = str.length - 1; i >= 0; i--) {
     string = string + str.charAt(i);
   }

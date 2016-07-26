@@ -105,7 +105,7 @@ Add a property named contents and set it to be an empty array
 
 console log the object*/
 var bigBox = {};
-bigBox.size = Math.random();
+bigBox.size = Math.floor(Math.random() * 50);
 bigBox.color = "purple";
 bigBox.contents = [];
 console.log(bigBox);

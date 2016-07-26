@@ -126,13 +126,15 @@ console.log(bigBox);
 
 console log the object */ 
 var colorMeBadd = {
-  iro:{}, 
-  akai: "red", 
-  aoi: "blue", 
-  midori: "green", 
-  shiroi: "white", 
-  pinku: "pink", 
-  murasaki: "purple"
+  iro: { 
+    akai: "red", 
+    aoi: "blue", 
+    midori: "green", 
+    shiroi: "white", 
+    pinku: "pink", 
+    murasaki: "purple"
+  },
+  isJapanese: true
 };
 console.log(colorMeBadd);
 
@@ -230,7 +232,7 @@ console.log(fightDaPower(drinkinAlready));
 /*22. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in exercise 10.  Console log the result.*/
 function contentFiller(obj) {
   for (i = 0; i < 5; i++) {
-    obj.contents.push((Math.random() * 20) + 1);
+    obj.contents.push(Math.floor(Math.random() * 20));
   }
   return obj;
 }
@@ -238,8 +240,10 @@ console.log(contentFiller(bigBox));
 /*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
 
 function firstReverse(str) {
+  var string = ""
   for (i = str.length - 1; i >= 0; i--) {
-    console.log(str.charAt(i));
+    string = string + str.charAt(i);
   }
+  return string;
 }
-firstReverse("hello");
+console.log(firstReverse("hello"));
